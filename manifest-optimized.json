@@ -1,0 +1,113 @@
+{
+  "id": "guts-card-game",
+  "name": "GUTS - The Card Game",
+  "short_name": "GUTS",
+  "description": "High-stakes 2-card poker. Hold or drop - do you have the GUTS?",
+  "start_url": "/?source=pwa",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "minimal-ui"],
+  "background_color": "#0f172a",
+  "theme_color": "#14b8a6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  
+  "icons": [
+    { "src": "/icons/icon-72x72.png", "sizes": "72x72", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-96x96.png", "sizes": "96x96", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-128x128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-144x144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-152x152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-384x384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  
+  "screenshots": [
+    {
+      "src": "/screenshots/game-mobile.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "GUTS gameplay on mobile"
+    },
+    {
+      "src": "/screenshots/game-tablet.png",
+      "sizes": "2048x1536",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "GUTS multiplayer on tablet"
+    }
+  ],
+  
+  "categories": ["games", "entertainment", "casino"],
+  
+  "shortcuts": [
+    {
+      "name": "Play Now",
+      "short_name": "Play",
+      "url": "/?action=play&source=shortcut",
+      "description": "Start a quick game of GUTS",
+      "icons": [{ "src": "/icons/shortcut-play.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Daily Challenge",
+      "short_name": "Daily",
+      "url": "/?action=daily&source=shortcut",
+      "description": "Complete today's challenge",
+      "icons": [{ "src": "/icons/shortcut-daily.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Tournaments",
+      "short_name": "Tourneys",
+      "url": "/tournaments?source=shortcut",
+      "description": "Join a tournament",
+      "icons": [{ "src": "/icons/shortcut-trophy.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Leaderboard",
+      "short_name": "Leaders",
+      "url": "/leaderboard?source=shortcut",
+      "description": "View top players",
+      "icons": [{ "src": "/icons/shortcut-leaderboard.png", "sizes": "96x96", "type": "image/png" }]
+    }
+  ],
+  
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  
+  "handle_links": "preferred",
+  
+  "share_target": {
+    "action": "/?share=true",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  
+  "protocol_handlers": [
+    {
+      "protocol": "web+guts",
+      "url": "/?action=%s"
+    }
+  ],
+  
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  
+  "related_applications": [],
+  
+  "iarc_rating_id": "",
+  
+  "widgets": []
+}
